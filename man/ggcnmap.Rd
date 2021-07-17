@@ -7,6 +7,7 @@
 ggcnmap(
   data,
   fill.variable = "Value",
+  save = FALSE,
   low = "#3c9eff",
   high = "#ff445d",
   mid = "#f8d248",
@@ -40,7 +41,10 @@ a ggplot
 China map based ggplot2 version 2
 }
 \examples{
-data <- openxlsx::read.xlsx("provincedata.xlsx", sheet = 1, rowNames = F, colNames = T)
+data <- ggcnmap::province
+library(showtext)
+showtext_auto(enable = TRUE)
+font_add('Songti', 'Songti.ttc','STKaiti','STXihei')
 ggcnmap(data = data, fill.variable = "value", fill = 2,
         limits = c(40, 600),
         midpoint = 5,
