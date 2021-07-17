@@ -1,0 +1,11 @@
+Package: ggcnmap
+Type: Package
+Title: China map based on ggplot2
+Version: 0.0.1
+Author: Zhonghui Gai
+Maintainer: ZhonghuiGai <zhgai@aliyun.com>
+Description: China map based on ggplot2
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
