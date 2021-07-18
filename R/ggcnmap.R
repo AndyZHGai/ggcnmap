@@ -82,5 +82,6 @@ ggcnmap <- function(data, fill.variable = "Value", save = FALSE, size = 6,
   if (save == TRUE) {
     ggsave(plot = p, file = "test.pdf", device = cairo_pdf, family = "yahei")
   }
+  detach("package:sf")
   return(p)
 }
